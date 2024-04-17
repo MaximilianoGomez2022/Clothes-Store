@@ -69,7 +69,7 @@ useEffect(() => {
                 <ul id="barra">
                     <li><a href="/">Home</a></li>
                     <li>
-                    <Link to="/nuevo" className='nav-link'>Agregar Pelicula</Link>
+                    <Link to="/nuevo" className='nav-link'>Agregar Producto</Link>
                     </li>
                 </ul>
             </nav>
