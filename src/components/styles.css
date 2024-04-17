@@ -217,6 +217,10 @@ h1 {
 }
 
 .catalogo h2 {
+    text-align: center;
+}
+
+.catalogo h3 {
     font-size: 1.4em;
     text-align: center;
 }
@@ -455,6 +459,7 @@ footer h2 {
 
     .detalle {
         margin-top:150px !important;
+        margin-bottom: 200px;
     }
 
     .titulo-portada {
@@ -562,6 +567,10 @@ footer h2 {
         font-size: 4em !important;
     }
 
+    .Content {
+        margin-top: 100px;
+    }
+
     .contacto {
         display: flex;
         justify-content: space-between;
@@ -621,6 +630,26 @@ footer h2 {
         padding-left: 0px;
         margin-left: 13px;
         margin-right: 20px;
+    }
+
+    .form-nuevo {
+        width: 70%;
+        margin: auto;
+    }
+
+    .form-nuevo h1 {
+        font-size: 1.4em !important;
+    }
+
+    .categorias h3 {
+        text-align: left;
+        font-size: 2em  !important;
+        margin-bottom: 1.6em;
+    }
+
+    .catalogo button {
+        display: block;
+        margin-bottom: 1.3em;
     }
 
 
@@ -747,6 +776,11 @@ footer h2 {
     .footer-border {
         border-bottom: none;
         display: none;
+    }
+
+    .catalogo h2 {
+        font-size: 4em;
+        margin-bottom: 1.3em;
     }
 }
 

@@ -2,7 +2,7 @@ import './styles.css'
 
 function Header(props){
     return (
-        <div className="Header">
+        <div>
             {props.children}
         </div>
     )

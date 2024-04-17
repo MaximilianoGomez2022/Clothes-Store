@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react'
 import HomePage from '../pages/HomePage'
 import ProductoDetalle from '../pages/ProductoDetalle'
+import NewProduct from '../pages/NewProduct'
 import {Routes, Route, Link, useNavigate, Navigate} from 'react-router-dom'
 import * as authService from '../services/auth.services.js'
 import Header from './components/header'
@@ -57,7 +58,7 @@ useEffect(() => {
         <Header>
           <header className='header'>
             <div className='header-container'>
-            <div class="logo">
+            <div className="logo">
                 <a href="/" id="logo">Fish & Lakes</a>
             </div>
             <nav id="menu">
@@ -66,10 +67,10 @@ useEffect(() => {
                     <li><a href="#">cerrar</a></li>
                 </ul>
                 <ul id="barra">
-                    <li><a href="#nosotros">Home</a></li>
-                    <li><a href="#nosotros">About</a></li>
-                    <li><a href="#servicios">Blog</a></li>
-                    <li><a href="#contacto">Contact</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li>
+                    <Link to="/nuevo" className='nav-link'>Agregar Pelicula</Link>
+                    </li>
                 </ul>
             </nav>
             </div>
@@ -81,9 +82,13 @@ useEffect(() => {
 
           <Route path='/' element={<HomePage/>}></Route>
 
+          
+          <Route path='/nuevo' element={<NewProduct></NewProduct>}></Route>
+
           <Route path='/products/:id' element={<ProductoDetalle />}></Route>
 
           <Route path='/*' element={<h1>Error 404</h1>}></Route>
+
           </Routes>
                     
           </Content>
